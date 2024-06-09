@@ -1,4 +1,11 @@
-const getTheTitles = function() {
+const getTheTitles = function(arr) {
+
+    function extract(item){
+        return item.title
+    }
+
+    let titles = arr.map(extract)
+    return titles
 
 };
 
